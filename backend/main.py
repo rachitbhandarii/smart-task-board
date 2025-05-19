@@ -57,7 +57,7 @@ async def createTask(title: str, content: Optional[str] = None, deadline: Option
             id=str(uuid.uuid4()),
             title=title,
             content=content,
-            deadline=deadline or datetime.now(),
+            deadline=deadline,
             status=0
         )
         tasks.append(new_task)
