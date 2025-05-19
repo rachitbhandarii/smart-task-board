@@ -97,4 +97,8 @@ async def deleteTask(task_id: str):
         return {"message": "Task deleted"}
     except Exception as e:
         logger.error(f"Error in deleteTask: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e)) 
+        raise HTTPException(status_code=500, detail=str(e))
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000) 
