@@ -1,4 +1,4 @@
-const API_URL = 'http://smart-task-board-production.up.railway.app';
+const API_URL = 'https://smart-task-board-production.up.railway.app';
 
 export const fetchTasks = async () => {
   const response = await fetch(`${API_URL}/tasks`);
